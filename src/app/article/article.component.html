@@ -1,0 +1,64 @@
+
+
+<body>
+<div class="article">
+
+
+  <div class="article">
+    <div *ngFor="let i of article | keyvalue" class="item" >
+      <div class="image">
+        <img src="assets/article/{{i.value['image']}}.jpg" >
+      </div>
+      <div class="contenue1">
+        <span class="categorie"><a href="Adresse ou URL"  style="text-decoration:none;"><h6>{{i.value["categorie"]}}</h6>  </a></span>
+        <span class="font-weight-bold">{{i.value["titre"]}}</span>
+        <br>
+        <span class="font-weight-light" >
+                      {{i.value['contenue']}}
+               </span><br>
+        <button class="btn btn-outline-danger" > <a href="/article/{{i.value['id']}}">Lire plus ...</a> </button>
+
+      </div>
+    </div>
+  </div>
+
+
+<!--
+  <div class="item" >
+    <div class="image">
+      <img src="http://www.tunisie-foot.com/home/wp-content/uploads/2017/11/06V1828.a4c1e6-1270x5581-660x330.jpg" >
+    </div>
+    <div class="contenue1">
+      <span class="categorie"><a href="Adresse ou URL"  style="text-decoration:none;"><h6>FOOTBALL</h6>  </a></span>
+      <span class="font-weight-bold">Ligue des champions : Le Club africain perd ses 3 points</span>
+      <br>
+      <span class="font-weight-light" >
+                   Après avoir été interdit de recrutements, le Club Africain encaisse une nouvelle sanction.
+            </span><br>
+      <button class="btn btn-outline-danger">Lire plus ...</button>
+
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="image">
+      <img src="https://i.skyrock.net/9154/28229154/pics/897395764_small.jpg" >
+    </div>
+    <div class="contenue1">
+      <span class="categorie"><a href="Adresse ou URL"  style="text-decoration:none;"><h6>FOOTBALL</h6>  </a></span>
+      <span class="font-weight-bold">Club Africain - Daniel Sanchez maintenu à la tête de l'équipe, Khelifa reste au Parc A</span>
+      <br>
+      <span class="font-weight-light" >
+Meilleur buteur du championnat de football avec 15 buts, Khelifa a été approché par le club tunisois  ...
+            </span><br>
+      <button class="btn btn-outline-danger">Lire plus ...</button>
+
+    </div>
+  </div> -->
+
+
+
+</div>
+
+</body>
+

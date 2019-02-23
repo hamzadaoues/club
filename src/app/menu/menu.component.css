@@ -1,0 +1,46 @@
+
+body {
+  background-color: black;
+ background-image: url("/assets/bg.jpg");
+   height: 75px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: center;
+
+}
+.logo{
+  height: 90px;
+}
+
+li{
+  display: inline;
+  margin-top: 20px;
+  font-family: Impact;
+  font-size: x-large;
+}
+a{
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s; /* For modern browsers */
+
+}
+a:hover{
+  color: #ff0000;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+p{
+  color: white;
+  font-size: 12px;
+}
+
+.item{
+margin-top: 20px;
+margin-right: 450px;
+}
+

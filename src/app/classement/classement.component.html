@@ -1,0 +1,22 @@
+<body>
+
+<table class="table table-hover">
+  <tr>
+    <th *ngFor="let col of columns">
+      {{col | uppercase}}
+    </th>
+  </tr>
+  <tr *ngFor="let char of data">
+    <td *ngFor="let col of columns">
+      <div *ngIf="col=='equipe'; else elseBlock">
+        <p class="flotte">
+          <img src="assets/logos/{{char[col]}}.png" width="30px" height="30px" >
+        </p>
+        {{equipe[char[col]]}}
+      </div>
+      <ng-template #elseBlock>{{char[col]}}</ng-template>
+    </td>
+  </tr>
+</table>
+
+</body>

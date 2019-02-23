@@ -1,0 +1,64 @@
+{
+  "2": {
+    "nom": "B.Ifa",
+    "poste": "Defense",
+    "numero":"2"
+  },
+  "17": {
+    "nom": "Y.Chamekhi",
+    "poste": "Attaquant",
+    "numero":"17"
+  },
+  "26": {
+    "nom": "G.Ayedi",
+    "poste": "Milieu",
+    "numero":"26"
+  },
+  "15": {
+    "nom": "Z.Dhaouedi",
+    "poste": "Demi-gauche",
+    "numero":"15"
+  },
+  "13": {
+    "nom": "W.B. Yahia",
+    "poste": "Milieu difensive",
+    "numero":"13"
+  },
+  "5": {
+    "nom": "A.Khalil",
+    "poste": "Milieu offensif",
+    "numero":"5"
+  },
+  "7": {
+    "nom": "D.Oussema",
+    "poste": "Regisseur",
+    "numero":"7"
+  },
+  "5": {
+    "nom": "A.Khalil",
+    "poste": "Milieu offensif",
+    "numero":"5"
+  },
+  "4": {
+    "nom": "A.Hamza",
+    "poste": "Arriére droit",
+    "numero":"4"
+  },
+  "20": {
+    "nom": "A.Abdi",
+    "poste": "Arriére Gauche",
+    "numero":"20"
+  },
+  "27": {
+    "nom": "F.Jaziri",
+    "poste": "Défenseur axiale",
+    "numero":"27"
+  },
+  "16": {
+    "nom": "A.Dkhili",
+    "poste": "Gardien",
+    "numero":"16"
+  }
+
+
+}

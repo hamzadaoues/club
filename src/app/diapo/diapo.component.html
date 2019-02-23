@@ -1,0 +1,129 @@
+<body>
+
+<div class="diap">
+
+  <ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+      <img [src]="images[0]" alt="Random first slide">
+      <div class="carousel-caption">
+        <h3>First slide label</h3>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[1]" alt="Random second slide">
+      <div class="carousel-caption">
+        <h3>Second slide label</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[2]" alt="Random third slide">
+      <div class="carousel-caption">
+        <h3>Third slide label</h3>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+
+
+</div>
+
+<div class="result">
+
+<div class="res">
+  <ngb-accordion [closeOthers]="true" >
+  <ngb-panel id="live" >
+    <ng-template ngbPanelTitle >
+     <div (click)="match='live'">
+      Live Match {{match}}
+      <span><img src="https://www.skores.com/main_icons/live-blinking.gif" height="13px" width="13px" class="flotte"> </span>
+     </div>
+    </ng-template>
+    <ng-template ngbPanelContent>
+         <div class="res_contenu">
+
+
+        <img src="/assets/logos/6.png" width="50px" height="50px">
+        <div class="score">
+
+          <h5>2 - 0</h5>
+        </div>
+        <img src="https://seeklogo.com/images/T/tp-mazembe-logo-1493DD4E26-seeklogo.com.png" width="50px" height="50px">
+         </div>
+          </ng-template>
+  </ngb-panel>
+
+  <ngb-panel id="previous">
+    <ng-template ngbPanelTitle >
+      <div (click)="match='previous'">
+      <span>Previous Match</span>
+      </div>
+    </ng-template>
+    <ng-template ngbPanelContent>
+     previous match
+    </ng-template>
+  </ngb-panel>
+
+  <ngb-panel id="next"  >
+    <ng-template ngbPanelTitle >
+      <div (click)="match='next'">
+        <span>Next Match</span>
+      </div>
+    </ng-template>
+    <ng-template ngbPanelContent>
+        next match
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>
+</div>
+
+<div class="formation" >
+
+
+
+  <div *ngFor="let d of data[match] " class="container">
+    <div *ngFor="let item of d | keyvalue" class="item">
+     <figure>
+       <img src="assets/joueur2.png" width="25px" height="25px" (mouseenter)="hideDescription[item.value]=false"  (mouseout)="hideDescription[item.value]=true">
+
+       <figcaption class="text-md-center">
+         <h6>{{effectif[item.value]["numero"]}}</h6>
+       </figcaption>
+     </figure>
+
+
+      <div [hidden]="hideDescription[item.value]" class="description" >
+       <!--
+        <img src="https://i.ibb.co/MskPf2J/wissem.png" class="image" height="120px" width="90px">
+        <div class="container1">
+           <div class="nom"></div>
+
+        </div>-->
+        <figure class="snip1171">
+          <img src="assets/player/{{item.value}}.jpg" alt="sample71"/>
+          <div class="price">{{effectif[item.value]["numero"]}}</div>
+          <figcaption>
+            <h3>{{effectif[item.value]["nom"]}}</h3>
+            <p>
+              Poste : {{effectif[item.value]["poste"]}}<br>
+              Date de naissance : 21/05/1987.<br>
+              Taille : 1.84 m.<br>
+              Pied fort : Droite.<br>
+            </p><a href="#">2016-2019</a>
+          </figcaption>
+        </figure>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+
+
+</body>
