@@ -23,9 +23,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/bootstrap-4.2.1-dist/css/bootstrap.min.css",
+              "src/assets/animated/aos.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/bootstrap-4.2.1-dist/js/bootstrap.min.js",
+              "src/bootstrap-4.2.1-dist/js/bootstrap.js",
+              "src/assets/animated/aos.js"
+            ]
           },
           "configurations": {
             "production": {
